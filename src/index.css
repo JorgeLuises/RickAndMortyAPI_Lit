@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+/* Removido el outline de depuración. Añadimos box-sizing global
+    y evitamos scroll horizontal forzando overflow-x en el root.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
