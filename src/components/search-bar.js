@@ -51,7 +51,6 @@ export class SearchBar extends LitElement {
     // ============ MÉTODOS DEL COMPONENTE ================ //
     // ----- Método para realizar busqueda ----- //
     handleSearch(e) {
-        // update internal state from input event
         this.searchQuery = e?.target?.value ?? '';
         this.dispatchEvent(new CustomEvent('searching', {
             detail: { character: this.searchQuery },
